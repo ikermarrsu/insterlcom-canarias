@@ -1,0 +1,141 @@
+/*Banner*/
+
+.banner-img {
+    background-image: linear-gradient(#00000080, #00000080), url("../imgs/contacto.jpg");
+    background-size: cover;
+    background-position: center left;
+}
+
+/*Contenido*/
+
+main{
+    width: 60%;
+    margin: 4%;
+    display: flex;
+    justify-self: center;
+    gap: 15%;
+    align-items: baseline;
+    justify-content: center;
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    font-size: 28pt
+}
+
+.titulo hr{
+    width: 40%;
+}
+
+#nombre-num{
+    display: flex;
+    gap: 2%;
+}
+
+input[type=text],
+textarea,
+select,
+input[type=email],
+input[type=tel] {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    font-size: 14pt;
+    background-color: whitesmoke;
+    resize: vertical;
+}
+
+textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 200px;
+    min-height: 100px;
+}
+
+input[type=submit] {
+    display: flex;
+    justify-self: center;
+    width: 100%;
+    background-color: #253f8b;
+    color: whitesmoke;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 21px;
+}
+
+
+input[type=submit]:hover {
+    background-color: #3153b6;
+}
+
+@media (min-width: 751px) and (max-width: 1300px) {
+    main{
+        flex-direction: column-reverse;
+    }
+
+    #solicitud .titulo{
+        justify-self: center;
+    }
+    
+    .titulo hr{
+        width: 100%;
+    }
+
+    #solicitud{
+        margin-bottom: 15%;
+    }
+
+    aside{
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20%;
+    }
+ 
+    .info-aside{
+        scale: 1.2;
+        text-align: center;
+    }
+}
+
+@media (max-width: 750px) {
+    main{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    #solicitud .titulo{
+        justify-self: center;
+    }
+
+    .titulo h1{
+        text-align: center;
+    }
+
+    .titulo hr{
+        width: 100%;
+    }
+
+    #solicitud{
+        margin-bottom: 15%;
+    }
+
+    #nombre-num{
+        display: flex;
+        flex-direction: column;
+    }
+ 
+    .info-aside{
+        text-align: center;
+    }
+
+}

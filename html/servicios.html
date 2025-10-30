@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Instelcom Canarias - Servicios</title>
+    <!--Favicon-->
+    <link rel="shortcut icon" href="../imgs/favicon.png" type="image/x-icon">
+    <!--Css-->
+    <link rel="stylesheet" href="../css/estilos-comun.css">
+    <link rel="stylesheet" href="../css/estilos-servicios.css">
+    <!-- tipografía -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <!-- iconos -->
+    <script src="https://kit.fontawesome.com/94d9315d75.js" crossorigin="anonymous"></script>
+</head>
+</head>
+<body>
+  <div id="cabecera">
+    <!-- Header -->
+    <header>
+        <div id="logo">
+            <a href="../index.html">
+                <img src="../imgs/logo.png" alt="Logotipo de Instelcom Canarias">
+            </a>
+        </div>
+        <div id="info">
+            <div class="caja-header">
+                <span class="circulo">
+                    <i class="fa-solid fa-calendar fa-xl"></i>
+                </span>
+                <div class="caja-header-info">
+                    <h3>Horario</h3>
+                    <span>De lunes a viernes</span>
+                </div>
+            </div>
+            <div class="caja-header">
+                <span class="circulo">
+                    <i class="fa-solid fa-phone-volume fa-xl"></i>
+                </span>
+                <div class="caja-header-info">
+                    <h3>Teléfono</h3>
+                    <span>+34 619 36 10 82</span>
+                </div>
+            </div>
+            <a href="#">Llama ahora</a>
+        </div>
+    </header>
+    <!--Hamburguesa-->
+    <div id="hamburguesa">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <!-- Menú -->
+    <nav id="enlaces">
+        <ul>
+            <li><a href="../index.html" class="subrayar">Inicio</a></li>
+            <li><a href="servicios.html" id="subrayado">Servicios</a></li>
+            <li><a href="resenas.html" class="subrayar">Reseñas</a></li>
+            <li><a href="contacto.html" class="subrayar">Contacto</a></li>
+        </ul>
+    </nav>
+  </div>
+    <!-- Banner -->
+    <div class="banner-img">
+        <h1 class="banner-text">SERVICIOS</h1>
+    </div>
+  <!--Contenido-->
+  <main>
+    <div class="servicios">
+      <a href="contacto.html">
+        <div class="fotos" id="electricas">
+          <div class="caja">
+            <i class="fa-regular fa-lightbulb icons fa-2xl"></i>
+          </div>
+        </div>
+      </a>
+      <h3>
+        Instalaciones eléctricas
+      </h3>
+    </div>
+    <div class="servicios">
+      <a href="contacto.html">
+        <div class="fotos" id="placas">
+          <div class="caja">
+            <i class="fa-solid fa-solar-panel icons fa-2xl"></i>
+          </div>
+        </div>
+      </a>
+      <h3>
+        Instalación de placas solares
+      </h3>
+    </div>
+    <div class="servicios">
+      <a href="contacto.html">
+        <div class="fotos" id="aire">
+          <div class="caja">
+            <i class="fa-solid fa-temperature-low icons fa-2xl"></i>
+          </div>
+        </div>
+      </a>
+      <h3>
+        Aire acondicionado y extracción
+      </h3>
+    </div>
+    <div class="servicios">
+      <a href="contacto.html">
+        <div class="fotos" id="antenas">
+          <div class="caja">
+            <i class="fa-solid fa-satellite-dish icons fa-2xl"></i>
+          </div>
+        </div>
+      </a>
+      <h3>
+        Servicios técnico de antenas
+      </h3>
+    </div>
+    <div class="servicios">
+      <a href="contacto.html">
+        <div class="fotos" id="piscinas">
+          <div class="caja">
+            <i class="fa-solid fa-water-ladder icons fa-2xl"></i>
+          </div>
+        </div>
+      </a>
+      <h3>
+        Piscinas
+      </h3>
+    </div>
+    <div class="servicios">
+      <a href="contacto.html">
+        <div class="fotos" id="fontaneria">
+          <div class="caja">
+            <i class="fa-solid fa-screwdriver-wrench icons fa-2xl"></i>
+          </div>
+        </div>
+      </a>
+      <h3>
+        Servicios de fontanería
+      </h3>
+    </div>
+  </main>
+  <!--Footer-->
+    <footer>
+        <ul>
+            <li>
+                <a href="" target="_blank">Aviso legal</a>
+            </li>
+            <li>
+                <a href="" target="_blank">Política de cookies</a>
+            </li>
+            <li>
+                <a href="" target="_blank">Política de privacidad</a>
+            </li>
+        </ul>
+    </footer>
+    <!--Script-->
+    <script>
+        function myFunction() {
+            var x = document.getElementById("enlaces");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>

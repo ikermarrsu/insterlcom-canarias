@@ -1,0 +1,282 @@
+/*Banner*/
+
+.banner-img {
+    background-image: linear-gradient(#00000080, #00000080), url("../imgs/partes.jpg");
+    background-size: cover;
+    background-position: center left;
+}
+
+/*Contenido*/
+
+main{
+    width: 80%;
+    margin: 4%;
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#titulo{
+    margin: 5%;
+}
+
+
+#titulo h1{
+  text-align: center;
+}
+
+#clientes{
+    color: orangered;
+    font-size: 40px;
+}
+
+#titulo hr{
+  width: 100%;
+}
+
+/*Testimonios*/
+
+#testimonios {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.testimonio {
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.valoracion {
+    color: orangered;
+    font-size: 21px;
+    margin-bottom: 2%;
+}
+
+.valoracion i {
+    margin-right: 0.2rem;
+}
+
+.valoracion span {
+    color: #253f8b;
+    margin-left: 0.5rem;
+    font-weight: bold;
+}
+
+.testimonio h2 {
+    color: #253f8b;
+    margin-bottom: 0%;
+    text-align: center;
+}
+  
+.testimonio p {
+    color: black;
+    line-height: 1.5;
+    margin-top: 2%;
+    flex-grow: 1;
+    align-self: stretch;
+    display: flex;
+}
+
+.perfil {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+}
+.perfil img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+.perfil h4 {
+    color: #253f8b;
+    font-size: 18px;
+    margin: 0;
+    font-weight: normal;
+}
+
+/*Dejar reseña*/
+
+
+/*Estrellas*/
+
+.star {
+	color: orangered !important;
+}
+
+.rate {
+	height: 50px;
+	margin-left: -5px;
+	padding: 5px;
+	font-size: 30px;
+	position: relative;
+	cursor: pointer;
+}
+
+.rate input[type="radio"] {
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,0%);
+	pointer-events: none;
+}
+
+.star-over::after {
+	font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+	content: "\f005";
+	display: inline-block;
+	color: #ffa280;
+	z-index: 1;
+	position: absolute;
+	top: 5px;
+	left: 5px;
+}
+
+.rate:nth-child(1) .face::after {
+	content: "\f119"; /* ☹ */
+}
+.rate:nth-child(2) .face::after {
+	content: "\f11a"; /* 😐 */
+}
+.rate:nth-child(3) .face::after {
+	content: "\f118"; /* 🙂 */
+}
+.rate:nth-child(4) .face::after {
+	content: "\f580"; /* 😊 */
+}
+.rate:nth-child(5) .face::after {
+	content: "\f59a"; /* 😄 */
+}
+
+.face {
+	opacity: 0;
+	position: absolute;
+	width: 35px;
+	height: 35px;
+	background: #ffa280;
+	border-radius: 5px;
+	top: -50px;
+	left: 5px;
+	transition: 0.2s;
+	pointer-events: none;
+}
+
+.face::before {
+	font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+	content: "\f0dd";
+	display: inline-block;
+	color: #ffa280;
+	z-index: 1;
+	position: absolute;
+	left: 8px;
+	bottom: -15px;
+}
+
+.face::after {
+	font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+	display: inline-block;
+	color: #fff;
+	z-index: 1;
+	position: absolute;
+	font-size: 95%;
+	left: 3px;
+	top: 2px;
+}
+
+.rate:hover .face {
+	opacity: 1;
+}
+
+/*Formulario*/
+
+form{
+	width: 90%;
+    margin-top: 5%;
+    border: 2px solid #ccc;
+	border-radius: 12px;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+    gap: 30px;
+}
+
+form .titulo h1{
+    font-size: 40px;
+    text-align: center;
+}
+
+.estrellas{
+	display: flex;
+	justify-content: center;
+	scale: 1.3;
+}
+
+input[type=text],
+textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+    resize: vertical;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14pt;
+}
+
+#info-reseña{
+    width: 100%;
+}
+
+#titulo-resena{
+    margin-top: 3%;
+}
+
+textarea{
+    min-height: 100px;
+    height: 200px;
+}
+
+
+input[type=submit] {
+    display: flex;
+    justify-self: center;
+    width: 100%;
+    background-color: #253f8b;
+    color: whitesmoke;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 21px;
+}
+
+input[type=submit]:hover {
+    background-color: #3153b6;
+}
+
+/*Responsive*/
+@media (max-width: 850px){
+    #testimonios {
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 20%;
+    }
+
+    form{
+        margin-bottom: 15%;
+    }
+}

@@ -1,0 +1,276 @@
+body{
+    margin: 0%;
+    font-family: "Montserrat", sans-serif;
+    background-color: whitesmoke;
+}
+
+
+/*Cabecera*/
+
+#cabecera {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+header{
+    background-color: #d3d3d3;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5% 4%;
+}
+
+#logo img{
+    width: 80%;
+    margin-left: 2%;
+}
+
+#info{
+    display: flex;
+    width: 45%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.caja-header{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.circulo {
+    height: 40px;
+    width: 40px;
+    border: 2px solid #253f8b;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circulo i{
+    color: #253f8b;
+}
+
+.caja-header-info h3{
+    color: orangered;
+    margin: 0%;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+#info a{
+    background-color: orangered;
+    color: whitesmoke;
+    padding: 2.5% 3%;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#info a:hover{
+    text-decoration: underline;
+}
+
+
+#hamburguesa {
+    display: none;
+    background-color: #253f8b;
+    height: 30px;
+    width: 100%;
+}
+
+/*Menú*/
+
+nav{
+    background-color: #253f8b;
+    padding: 1%;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    gap: 5%;
+    margin: 0% 4%;
+}
+
+nav li{
+    font-size: 18px;
+}
+
+#subrayado{
+    text-decoration: underline;
+    text-decoration-color: orangered;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 2.5px;
+}
+
+.subrayar {
+    position: relative;
+}
+
+.subrayar::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 2.5px;
+    background-color: orangered;
+    transition: width 0.25s ease-out;
+}
+
+.subrayar:hover::before {
+    width: 100%;
+}
+
+
+/*Banner*/
+.banner-img {
+    height: 400px;
+    display: flex;
+    align-items: center;
+}
+
+.banner-text {
+    color: whitesmoke;
+    font-family: "Quantico", monospace;
+    margin: 8%;
+    width: 100%;
+    text-shadow: 2px 2px #00000080;
+    font-size: 55px;
+    font-weight: bolder;
+}
+
+/*Contenido*/
+.titulo{
+  margin-bottom: 5%;
+}
+
+.titulo hr{
+  width: 100%;
+}
+
+h1 {
+    margin-top: 2%;
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
+hr {
+  height: 4px;
+  border: 0;
+  background-color: orangered;
+  border-radius: 4px;
+  margin-left: 0%;
+}
+
+/** footer **/
+
+footer {
+    background-color: #253f8b;
+    min-height: 60px;
+    align-content: center;
+}
+
+footer ul {
+    display: flex;
+    list-style-type: none;
+    gap: 5%;
+    padding: 1%;
+    justify-content: center;
+}
+
+footer li:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+/*Responsive*/
+
+@media (min-width: 751px) and (max-width: 1300px) {
+    .caja-header {
+        display: none;
+    }
+
+    #info{
+        justify-content: right;
+    }
+
+    nav{
+        padding: 1.5%;
+    }
+
+    nav ul{
+        margin: 0% 1%;
+    }
+}
+
+@media (max-width: 750px) {
+    ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin-bottom: 2%;
+    }
+
+    #header {
+        display: none;
+    }
+
+    #info{
+        display: none;
+    }
+
+    #logo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #logo img{
+        width: 100%;
+    }
+
+    nav {
+        background-color: #445484;
+    }
+
+    #subrayado {
+        display: none;
+    }
+
+    #hamburguesa {
+        display: flex;
+        align-items: center;
+    }
+
+    .icon {
+        padding: 5%;
+    }
+
+    #enlaces {
+        display: none;
+    }
+
+    .banner-img {
+        height: 200px;
+    }
+
+    .banner-text {
+        text-align: center;
+    }
+
+   footer ul {
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 5%;
+    }
+
+    .subrayar::before {
+        display: none;
+    }
+}

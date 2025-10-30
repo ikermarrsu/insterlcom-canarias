@@ -1,0 +1,227 @@
+.banner-img {
+  background-image: linear-gradient(#00000080, #00000080), url("../imgs/furgon.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/*Contenido*/
+main{
+  width: 80%;
+  margin: 4%;
+  display: flex;
+  justify-self: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+#cajas{
+  justify-self: center;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+  margin: 2%;
+}
+
+.caja{
+  width: 100%;
+  text-align: center;
+}
+
+
+.icono-caja{
+  font-size: 60px;
+  color: #253f8b;
+  margin-bottom: 5%;
+}
+
+.caja h4{
+  font-size: 24px;
+  margin: 0%;
+}
+
+.caja p{
+  color: #4a4a4a;
+  font-size: 14px;
+  text-wrap: wrap;
+}
+
+
+.separador-cajas {
+  border-left: 2px solid #4a4a4a;
+  height: 100px;
+}
+
+section{
+  width: 100%;
+  margin: 6% 0%;
+}
+
+#texto{
+  width: 50%;
+}
+
+#encabezado hr{
+  width: 20%;
+}
+
+#nosotros{
+  display: flex;
+  gap: 3%;
+}
+
+#texto {
+  width: 50%;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+
+/* Carousel */
+.carousel {
+  position: relative;
+  margin: auto;
+  width: 50%;
+}
+
+.diapo {
+  display: none;
+}
+
+.anterior,
+.siguiente {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.siguiente {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.anterior:hover,
+.siguiente:hover {
+  background-color: #253f8b;
+}
+
+.dots-container {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #7985abc9;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot.active,
+.dot:hover {
+  background-color: #1f44b1;
+}
+
+/*Animación*/
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.5
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+
+#certificados{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1% 2%;
+}
+
+.certificado{
+  width: 26%;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: flex;
+  justify-content: center;
+}
+
+.certificado:hover{
+  opacity: 1;
+}
+
+.certificado img{
+  width: 80%;
+}
+
+/*Responsive*/
+@media (max-width: 750px) {
+    .titulo h1{
+        text-align: center;
+        font-size: 30px;
+        margin-top: 10%;
+    }
+    
+
+    #cajas{
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .caja{
+        margin: 4% 0%;
+    }
+
+    .separador-cajas{
+        display: none;
+    }
+    
+    #nosotros{
+        flex-direction: column;
+    }
+
+    #texto{
+        width: 100%;
+        margin-bottom: 5%;
+    }
+
+    #encabezado h1{
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 0;
+    }
+    
+    #encabezado hr{
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .carousel {
+        width: 100%;
+    }
+}

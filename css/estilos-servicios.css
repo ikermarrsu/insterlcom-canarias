@@ -1,0 +1,136 @@
+/*Banner*/
+
+.banner-img {
+    background-image: linear-gradient(#00000080, #00000080), url("../imgs/cuadro.jpg");
+    background-size: cover;
+    background-position: center left;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-self: center;
+    margin-bottom: 3%;
+    margin-top: 3%;
+}
+
+.servicios {
+    width: 30%;
+    margin: 2% 0% 0% 2%;
+}
+
+.servicios h3 {
+    text-align: center;
+    margin-top: 4%;
+}
+
+.caja {
+    background-color: whitesmoke;
+    border: 2px solid orangered;
+    border-bottom: 0px;
+    --height: 5rem;
+    height: var(--height);
+    width: calc(2*var(--height));
+    border-radius: var(--height) var(--height) 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons {
+    color: orangered;
+}
+
+
+.fotos {
+    aspect-ratio: 16/9;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: end;
+    border-radius: 10px;
+}
+
+#electricas {
+    background-image: url("../imgs/cables.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#electricas:hover {
+    background-image: linear-gradient(#253e8b33, #253f8d80), url("../imgs/cables.png");
+}
+
+#placas {
+    background-image: url("../imgs/placas.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#placas:hover {
+    background-image: linear-gradient(#253e8b33, #253f8d80), url("../imgs/placas.png");
+}
+
+#aire {
+    background-image: url("../imgs/aire.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#aire:hover {
+    background-image: linear-gradient(#253e8b33, #253f8d80), url("../imgs/aire.png");
+}
+
+#antenas {
+    background-image: url("../imgs/antena.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#antenas:hover {
+    background-image: linear-gradient(#253e8b33, #253f8d80), url("../imgs/antena.png");
+}
+
+#piscinas {
+    background-image: url("../imgs/piscina.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#piscinas:hover {
+    background-image: linear-gradient(#253e8b33, #253f8d80), url("../imgs/piscina.png");
+}
+
+#fontaneria {
+    background-image: url("../imgs/fontaneria.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#fontaneria:hover {
+    background-image: linear-gradient(#253e8b33, #253f8d80), url("../imgs/fontaneria.png");
+}
+
+/*Responsive*/
+
+@media (min-width: 701px) and (max-width: 1300px) {
+    .servicios {
+        width: 45%;
+    }
+
+    main {
+        width: 90%;
+    }
+}
+
+@media (max-width: 700px) {
+    .servicios {
+        width: 100%;
+    }
+
+    .banner-img {
+        margin-bottom: 5%;
+    }
+}
